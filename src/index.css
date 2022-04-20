@@ -1,0 +1,42 @@
+@import './static/css/feather.css';
+
+@font-face {
+  font-family: persian;
+  src: url('./static/font/persian/FontPersian.eot');
+  src: url('./static/font/persian/FontPersian.eot?#iefix') format('embedded-opentype'),
+  url('./static/font/persian/FontPersian.woff2') format('woff2'),
+  url('./static/font/persian/FontPersian.woff') format('woff'),
+  url('./static/font/persian/FontPersian.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: roboto;
+  src: url('./static/font/latin/Roboto-Regular.eot');
+  src: url('./static/font/latin/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+  url('./static/font/latin/Roboto-Regular.woff2') format('woff2'),
+  url('./static/font/latin/Roboto-Regular.woff') format('woff'),
+  url('./static/font/latin/Roboto-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.taint {
+  display: block;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 100%;
+  transform: scale(0);
+}
+
+.taint.drop {
+  animation: ripple 0.65s linear;
+}
+
+@keyframes ripple {
+  100% {
+    opacity: 0;
+    transform: scale(2.5);
+  }
+}
